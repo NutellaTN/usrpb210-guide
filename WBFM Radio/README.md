@@ -3,7 +3,7 @@
 This is a Wideband FM (WBFM) Radio Receiver built using GNU Radio and designed to work with software-defined radios such as the Ettus Research USRP B210. It demodulates standard commercial FM broadcast radio stations (87.5 MHz - 108.0 MHz) and plays the audio directly through your computer's speakers.
 
 ## Prerequisites
-- A compatible hardware SDR (e.g., USRP B210) connected to your computer.
+- USRP B210 connected to your computer.
 - [GNU Radio](https://wiki.gnuradio.org/) installed on your system.
 - UHD (USRP Hardware Driver) installed.
 

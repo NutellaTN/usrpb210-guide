@@ -33,21 +33,9 @@ The script uses PyQt5 (via GNU Radio's `qtgui` library) to provide a graphical u
 - **RF Gain (dB)**: Adjusts the hardware amplifier in the SDR. If the signal is too weak, increase it; if the audio is distorted or clipping, lower it.
 - **Volume**: A simple software multiplier to adjust the speaker volume.
 
-## How to Run (Windows)
+## How to Run
 
-If you are using the official Windows build of GNU Radio, it bundles its own isolated Python environment. Therefore, running standard `python WBFM_Radio.py` will likely throw an error about missing modules (like `PyQt5` or `gnuradio`).
-
-**Option 1: GNU Radio Companion (Recommended)**
 1. Open **GNU Radio Companion** from your Start menu.
 2. Open the `WBFM_Radio.grc` file.
 3. Click the "Execute the flow graph" (Play) button in the toolbar.
 
-**Option 2: Windows PowerShell**
-To run the `.py` script directly, you have to inject GNU Radio's directories into your `PATH` variable and use its bundled Python executable:
-
-```powershell
-# Adjust paths if you installed GNU Radio in a custom location
-$env:PATH="C:\Program Files\GNU Radio\bin;C:\Program Files\GNU Radio\Python3.12;C:\Program Files\GNU Radio\Python3.12\Scripts;$env:PATH"
-
-& "C:\Program Files\GNU Radio\Python3.12\python.exe" WBFM_Radio.py
-```
